@@ -1,0 +1,16 @@
+{
+  "name": "mail-project",
+  "version": "1.0.0",
+  "description": "Capture a picture using camera and send it as a pdf with email attachment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.0"
+  }
+}

@@ -1,3 +1,31 @@
+# Solution by Omer Saleem
+
+## The backend
+Backend is created using node and express and it uses port 5000
+we need to use command 'node server.js' inside root folder to start the server
+
+## The fronted
+The frontend is inside client folder of the application and it uses port 3000
+we need to use command 'npm start' inside client folder to start client
+
+On laptop, the application can be tested on http://localhost:3000/
+
+## Mobile testing
+To test the app on a mobile phone, we need to run it on https which is required by getUserMedia
+in order to make camera work on mobile phone. For this purpose, I have used ngrok which maps our 
+localhost to https. Other steps are mentioned below
+
+1. Download and execute ngrok and enter following command inside it:
+ngrok http 5000 -host-header="localhost:5000" 
+this will map our localhost to a remote url with https which can be opened using mobile devices
+2. we need to paste that generated url in file client\src\CamEmail.js near line 68 and replace existing localhost URL
+3. Use 'npm run build' command inside client folder to generate compiled source code for react app
+4. Paste build folder on root with server.js. Then single server will host backend and frontend
+5. Run command 'node server.js' inside root folder to start server and full application should be 
+seen on http://localhost:5000/ as well we https URL provided by ngrok
+
+
+
 # MieterEngel coding challenge
 
 Welcome to the MieterEngel coding challenge! Your mission, should
