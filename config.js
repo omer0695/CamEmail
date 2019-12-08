@@ -1,4 +1,4 @@
 module.exports = {
-    USER: 'test.mieterengel@gmail.com', 
-    PASS: 'mieterengel.'
+    USER: 'your_mail@gmail.com', 
+    PASS: 'your_password'
 }
